@@ -8,7 +8,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // LEARN:
+    // LEARN SizeConfig implementation
     SizeConfig().init(context);
     return const Scaffold(
       resizeToAvoidBottomInset: false,
