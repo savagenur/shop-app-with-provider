@@ -136,7 +136,7 @@ class _SignFormState extends State<SignForm> {
           setState(() {
             errors.remove(kEmailNullError);
           });
-        } else if (emailValidatorRegExp.hasMatch(value) &&
+        }  if (emailValidatorRegExp.hasMatch(value) &&
             errors.contains(kInvalidEmailError)) {
           setState(() {
             errors.remove(kInvalidEmailError);
