@@ -4,7 +4,9 @@ import 'package:shop_app/screens/OTP/components/otp_form.dart';
 import 'package:shop_app/size_config.dart';
 
 class Body extends StatelessWidget {
-  const Body({super.key});
+  const Body({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +18,7 @@ class Body extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height:SizeConfig.screenHeight*.05),
-        
+              SizedBox(height: SizeConfig.screenHeight * .05),
               Text(
                 "OTP Verification",
                 style: headingStyle,
@@ -27,10 +28,9 @@ class Body extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               buildTimer(),
-              SizedBox(height:SizeConfig.screenHeight*.15),
-        
+              SizedBox(height: SizeConfig.screenHeight * .15),
               const OptForm(),
-              SizedBox(height:SizeConfig.screenHeight*.1),
+              SizedBox(height: SizeConfig.screenHeight * .1),
               GestureDetector(
                 onTap: () {
                   // Todo do something
@@ -42,7 +42,6 @@ class Body extends StatelessWidget {
                   ),
                 ),
               ),
-              
             ],
           ),
         ),
@@ -74,4 +73,3 @@ class Body extends StatelessWidget {
     );
   }
 }
-

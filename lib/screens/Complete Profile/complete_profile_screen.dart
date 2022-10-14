@@ -15,7 +15,7 @@ class CompleteProfileScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }

@@ -8,7 +8,7 @@ class OtpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO delete SizeConfig().init(context);
+    // Todo delete SizeConfig().init(context);
     SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
@@ -18,7 +18,7 @@ class OtpScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }
